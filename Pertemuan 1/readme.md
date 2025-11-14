@@ -1,4 +1,5 @@
 Penjelasam Implementasi Stack di Python
+
 Stack adalah struktur data yang cara kerjanya LIFO (Last In, First Out), artinya data yang terakhir dimasukkan akan menjadi data pertama yang dikeluarkan. Di Python, struktur stack bisa dibuat dengan memanfaatkan list, karena list sudah menyediakan fungsi untuk menambah dan menghapus data di bagian akhir.
 
 
