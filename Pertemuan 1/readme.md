@@ -10,7 +10,7 @@ Keduanya menggunakan tipe data **list**, karena Python menyediakan operasi yang 
 
 Stack adalah struktur data yang elemen terakhir masuk akan menjadi elemen pertama yang keluar.
 
-### ✅ **Membuat Stack**
+###  **Membuat Stack**
 
 ```python
 stack = []
