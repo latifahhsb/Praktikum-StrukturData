@@ -181,7 +181,6 @@ isEmpty: False
 Size: 2
 ```
 
----
 
 ##  **Struktur Data yang Digunakan**
 
