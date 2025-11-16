@@ -4,7 +4,6 @@
 Dokumentasi ini menjelaskan implementasi dasar struktur data **Stack** dan **Queue** menggunakan bahasa Python.
 Keduanya menggunakan tipe data **list**, karena Python menyediakan operasi yang efisien seperti `append()`, `pop()`, dan indexing.
 
----
 
 ##  **1. Stack (LIFO — Last In, First Out)**
 
