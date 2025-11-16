@@ -81,7 +81,6 @@ print("Size:", len(stack))
 Size: 2
 ```
 
----
 
 ##  **2. Queue (FIFO — First In, First Out)**
 
@@ -159,9 +158,8 @@ print("Size:", len(queue))
 Size: 2
 ```
 
----
 
-## 📎 **Ringkasan Output Program**
+##  **Ringkasan Output Program**
 
 ### **Stack**
 
