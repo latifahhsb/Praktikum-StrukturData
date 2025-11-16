@@ -6,7 +6,7 @@ Keduanya menggunakan tipe data **list**, karena Python menyediakan operasi yang 
 
 ---
 
-## 📌 **1. Stack (LIFO — Last In, First Out)**
+##  **1. Stack (LIFO — Last In, First Out)**
 
 Stack adalah struktur data yang elemen terakhir masuk akan menjadi elemen pertama yang keluar.
 
@@ -16,7 +16,7 @@ Stack adalah struktur data yang elemen terakhir masuk akan menjadi elemen pertam
 stack = []
 ```
 
-### ✅ **Push (Menambah Elemen ke Stack)**
+###  **Push (Menambah Elemen ke Stack)**
 
 ```python
 stack.append('A')
@@ -31,7 +31,7 @@ print("Stack:", stack)
 Stack: ['A', 'B', 'C']
 ```
 
-### ✅ **Pop (Menghapus Elemen Teratas)**
+###  **Pop (Menghapus Elemen Teratas)**
 
 ```python
 element = stack.pop()
@@ -44,7 +44,7 @@ print("Pop:", element)
 Pop: C
 ```
 
-### ✅ **Peek (Melihat Elemen Teratas Tanpa Menghapus)**
+###  **Peek (Melihat Elemen Teratas Tanpa Menghapus)**
 
 ```python
 topElement = stack[-1]
@@ -57,7 +57,7 @@ print("Peek:", topElement)
 Peek: B
 ```
 
-### ✅ **Cek Apakah Stack Kosong**
+###  **Cek Apakah Stack Kosong**
 
 ```python
 isEmpty = not bool(stack)
@@ -70,7 +70,7 @@ print("isEmpty:", isEmpty)
 isEmpty: False
 ```
 
-### ✅ **Ukuran Stack**
+###  **Ukuran Stack**
 
 ```python
 print("Size:", len(stack))
@@ -84,17 +84,17 @@ Size: 2
 
 ---
 
-## 📌 **2. Queue (FIFO — First In, First Out)**
+##  **2. Queue (FIFO — First In, First Out)**
 
 Queue adalah struktur data yang mengeluarkan elemen pertama yang masuk.
 
-### ✅ **Membuat Queue**
+###  **Membuat Queue**
 
 ```python
 queue = []
 ```
 
-### ✅ **Enqueue (Menambah Elemen ke Queue)**
+###  **Enqueue (Menambah Elemen ke Queue)**
 
 ```python
 queue.append('A')
@@ -109,7 +109,7 @@ print("Queue:", queue)
 Queue: ['A', 'B', 'C']
 ```
 
-### ✅ **Dequeue (Menghapus Elemen Depan)**
+###  **Dequeue (Menghapus Elemen Depan)**
 
 ```python
 element = queue.pop(0)
@@ -122,7 +122,7 @@ print("Dequeue:", element)
 Dequeue: A
 ```
 
-### ✅ **Peek (Melihat Elemen Depan Tanpa Menghapus)**
+###  **Peek (Melihat Elemen Depan Tanpa Menghapus)**
 
 ```python
 frontElement = queue[0]
@@ -135,7 +135,7 @@ print("Peek:", frontElement)
 Peek: B
 ```
 
-### ✅ **Cek Apakah Queue Kosong**
+###  **Cek Apakah Queue Kosong**
 
 ```python
 isEmpty = not bool(queue)
@@ -148,7 +148,7 @@ print("isEmpty:", isEmpty)
 isEmpty: False
 ```
 
-### ✅ **Ukuran Queue**
+###  **Ukuran Queue**
 
 ```python
 print("Size:", len(queue))
@@ -186,7 +186,7 @@ Size: 2
 
 ---
 
-## 📁 **Struktur Data yang Digunakan**
+##  **Struktur Data yang Digunakan**
 
 * `append()` ➝ menambah elemen
 * `pop()` ➝ menghapus elemen (terakhir / berdasarkan index)
