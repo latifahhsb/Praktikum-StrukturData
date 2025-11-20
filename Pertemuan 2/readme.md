@@ -1,18 +1,7 @@
-Berikut **versi parafrase** yang lebih ringkas, rapi, dan layak ditempel ke README GitHub.
-Struktur tetap sama, tetapi kalimatnya sudah diganti dengan gaya penjelasan yang lebih profesional dan tidak copy-paste dari teks awal.
+#  Implementasi Linked List Sederhana (Python)
 
----
 
-# 🧵 Implementasi Linked List Sederhana (Python)
-
-## 📌 Deskripsi
-
-Proyek ini berisi implementasi **Linked List** dasar menggunakan bahasa **Python**.
-Linked List merupakan struktur data linear yang terdiri dari sekumpulan *node*, di mana setiap node menyimpan sebuah nilai dan referensi menuju node berikutnya.
-
----
-
-# ⚙️ Fitur
+# Fitur
 
 Implementasi ini mendukung berbagai operasi dasar Linked List, antara lain:
 
@@ -25,20 +14,18 @@ Implementasi ini mendukung berbagai operasi dasar Linked List, antara lain:
 * Menampilkan isi list (`print`)
 * Menghitung jumlah elemen (`length`)
 
----
 
-# 🧱 Penjelasan Class
 
-## 🔹 Apa itu Class?
+#  Penjelasan Class
 
 Class adalah konsep dasar dalam pemrograman berorientasi objek yang berfungsi sebagai **cetak biru** (blueprint) untuk membuat objek.
 Melalui class, kita dapat mendefinisikan atribut dan method yang kemudian dapat digunakan oleh objek yang dihasilkan dari class tersebut.
 
----
 
-# 🧩 Penjelasan Sintaks & Fungsi
 
-## 🟦 Class `Node`
+#  Penjelasan Sintaks & Fungsi
+
+##  Class `Node`
 
 ```python
 class Node:
@@ -52,9 +39,9 @@ class Node:
 * `data` → menyimpan informasi
 * `next` → menyimpan referensi ke node selanjutnya
 
----
 
-## 🟦 Class `LinkedList`
+
+##  Class `LinkedList`
 
 ```python
 class LinkedList:
@@ -65,9 +52,9 @@ class LinkedList:
 Class ini berfungsi sebagai wadah yang mengelola seluruh node.
 `self.head` selalu menunjuk ke elemen pertama dalam list.
 
----
 
-## 🟩 `insert_at_first(data)`
+
+##  `insert_at_first(data)`
 
 Menambahkan node baru sebagai elemen pertama.
 
@@ -79,9 +66,8 @@ def insert_at_first(self, data):
 
 Node baru dibuat dengan mengarah ke head lama, kemudian head diperbarui.
 
----
 
-## 🟩 `insert_at_last(data)`
+##  `insert_at_last(data)`
 
 Menambahkan data di bagian paling akhir.
 
@@ -99,9 +85,8 @@ def insert_at_last(self, data):
 Jika list masih kosong → langsung dijadikan head.
 Jika tidak → telusuri list sampai node terakhir dan tambahkan node baru.
 
----
 
-## 🟩 `insert_at(index, data)`
+##  `insert_at(index, data)`
 
 Menyisipkan node pada posisi tertentu.
 
@@ -123,9 +108,8 @@ def insert_at(self, index, data):
 
 Jika posisi valid, program menelusuri node sampai satu langkah sebelum target, lalu menyisipkan node baru.
 
----
 
-## 🟥 `remove_first()`
+##  `remove_first()`
 
 Menghapus node pertama.
 
@@ -139,9 +123,8 @@ def remove_first(self):
 
 Head digeser ke node berikutnya sehingga node sebelumnya otomatis terlepas.
 
----
 
-## 🟥 `remove_last()`
+##  `remove_last()`
 
 Menghapus node terakhir.
 
@@ -163,9 +146,9 @@ def remove_last(self):
 Jika hanya ada satu node → head dihapus.
 Jika lebih dari satu → cari node terakhir dan putuskan hubungannya.
 
----
 
-## 🟥 `remove_at(index)`
+
+##  `remove_at(index)`
 
 Menghapus node pada index tertentu.
 
@@ -186,9 +169,8 @@ def remove_at(self, index):
 
 Program mencari node sebelum posisi target, lalu menghubungkannya ke node setelah target.
 
----
 
-## 📤 `print()`
+## `print()`
 
 Menampilkan seluruh node dalam list.
 
@@ -208,9 +190,9 @@ def print(self):
 Output disajikan dalam format berantai:
 `data -> data -> ...`
 
----
 
-## 🔢 `length()`
+
+##  `length()`
 
 Menghitung jumlah elemen.
 
@@ -226,9 +208,8 @@ def length(self):
 
 Menggunakan perulangan sederhana untuk menghitung total node.
 
----
 
-# 🧪 Eksekusi Program
+# Eksekusi Program
 
 ```python
 LL = LinkedList()
@@ -250,9 +231,8 @@ LL.print()
 print(LL.length())
 ```
 
----
 
-# 🔍 Proses Eksekusi (Ringkas)
+#  Proses Eksekusi (Ringkas)
 
 1. Membuat list kosong (`head = None`)
 2. Menambahkan jeruk → menjadi elemen pertama
@@ -265,9 +245,9 @@ print(LL.length())
 9. Menghapus elemen index 1 (anggur)
 10. Menghapus index 1 lagi (jeruk)
 
----
 
-# 🟢 Output Akhir
+
+#  Output Akhir
 
 ```
 mangga -> 
@@ -276,9 +256,6 @@ mangga ->
 
 List hanya menyisakan satu elemen, yaitu **mangga**.
 
----
-
-Kalau mau dibuatkan **versi yang tampilannya seperti dokumentasi profesional**, atau ingin **ditambah diagram alur / flowchart**, tinggal bilang!
 
 
 
