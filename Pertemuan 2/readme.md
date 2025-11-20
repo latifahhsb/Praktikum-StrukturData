@@ -1,6 +1,18 @@
-#  Implementasi Linked List Sederhana (Python)
+Berikut **versi parafrase** yang lebih ringkas, rapi, dan layak ditempel ke README GitHub.
+Struktur tetap sama, tetapi kalimatnya sudah diganti dengan gaya penjelasan yang lebih profesional dan tidak copy-paste dari teks awal.
 
-# Fitur
+---
+
+# 🧵 Implementasi Linked List Sederhana (Python)
+
+## 📌 Deskripsi
+
+Proyek ini berisi implementasi **Linked List** dasar menggunakan bahasa **Python**.
+Linked List merupakan struktur data linear yang terdiri dari sekumpulan *node*, di mana setiap node menyimpan sebuah nilai dan referensi menuju node berikutnya.
+
+---
+
+# ⚙️ Fitur
 
 Implementasi ini mendukung berbagai operasi dasar Linked List, antara lain:
 
@@ -13,46 +25,49 @@ Implementasi ini mendukung berbagai operasi dasar Linked List, antara lain:
 * Menampilkan isi list (`print`)
 * Menghitung jumlah elemen (`length`)
 
+---
 
-#  Penjelasan Class
+# 🧱 Penjelasan Class
+
+## 🔹 Apa itu Class?
 
 Class adalah konsep dasar dalam pemrograman berorientasi objek yang berfungsi sebagai **cetak biru** (blueprint) untuk membuat objek.
 Melalui class, kita dapat mendefinisikan atribut dan method yang kemudian dapat digunakan oleh objek yang dihasilkan dari class tersebut.
 
+---
 
+# 🧩 Penjelasan Sintaks & Fungsi
 
-#  Penjelasan Sintaks & Fungsi
-
-##  Class `Node`
+## 🟦 Class `Node`
 
 ```python
 class Node:
     def __init__(self, data=None, pointer=None):
         self.data = data
         self.next = pointer
-
+```
 
 **Node** adalah unit dasar penyusun Linked List.
 
 * `data` → menyimpan informasi
 * `next` → menyimpan referensi ke node selanjutnya
 
+---
 
-
-##  Class `LinkedList`
+## 🟦 Class `LinkedList`
 
 ```python
 class LinkedList:
     def __init__(self):
         self.head = None
-
+```
 
 Class ini berfungsi sebagai wadah yang mengelola seluruh node.
 `self.head` selalu menunjuk ke elemen pertama dalam list.
 
+---
 
-
-##  `insert_at_first(data)`
+## 🟩 `insert_at_first(data)`
 
 Menambahkan node baru sebagai elemen pertama.
 
@@ -64,9 +79,9 @@ def insert_at_first(self, data):
 
 Node baru dibuat dengan mengarah ke head lama, kemudian head diperbarui.
 
+---
 
-
-##  `insert_at_last(data)`
+## 🟩 `insert_at_last(data)`
 
 Menambahkan data di bagian paling akhir.
 
@@ -84,9 +99,9 @@ def insert_at_last(self, data):
 Jika list masih kosong → langsung dijadikan head.
 Jika tidak → telusuri list sampai node terakhir dan tambahkan node baru.
 
+---
 
-
-##  `insert_at(index, data)`
+## 🟩 `insert_at(index, data)`
 
 Menyisipkan node pada posisi tertentu.
 
@@ -104,13 +119,13 @@ def insert_at(self, index, data):
             node_sekarang = node_sekarang.next
         node = Node(data, node_sekarang.next)
         node_sekarang.next = node
-
+```
 
 Jika posisi valid, program menelusuri node sampai satu langkah sebelum target, lalu menyisipkan node baru.
 
+---
 
-
-##  `remove_first()`
+## 🟥 `remove_first()`
 
 Menghapus node pertama.
 
@@ -120,12 +135,13 @@ def remove_first(self):
         print("tidak ada data yang bisa dihapus")
     else:
         self.head = self.head.next
-
+```
 
 Head digeser ke node berikutnya sehingga node sebelumnya otomatis terlepas.
 
+---
 
-##  `remove_last()`
+## 🟥 `remove_last()`
 
 Menghapus node terakhir.
 
@@ -142,14 +158,14 @@ def remove_last(self):
             node_sebelumnya = node_sekarang
             node_sekarang = node_sekarang.next
         node_sebelumnya.next = None
-
+```
 
 Jika hanya ada satu node → head dihapus.
 Jika lebih dari satu → cari node terakhir dan putuskan hubungannya.
 
+---
 
-
-##  `remove_at(index)`
+## 🟥 `remove_at(index)`
 
 Menghapus node pada index tertentu.
 
@@ -166,13 +182,13 @@ def remove_at(self, index):
             node_sekarang = node_sekarang.next
             urutan += 1
         node_sekarang.next = node_sekarang.next.next
-
+```
 
 Program mencari node sebelum posisi target, lalu menghubungkannya ke node setelah target.
 
+---
 
-
-##  `print()`
+## 📤 `print()`
 
 Menampilkan seluruh node dalam list.
 
@@ -187,14 +203,14 @@ def print(self):
             text_print += str(node_sekarang.data) + " -> "
             node_sekarang = node_sekarang.next
         print(text_print)
-
+```
 
 Output disajikan dalam format berantai:
 `data -> data -> ...`
 
+---
 
-
-##  `length()`
+## 🔢 `length()`
 
 Menghitung jumlah elemen.
 
@@ -206,13 +222,13 @@ def length(self):
         data_sekarang = data_sekarang.next
         urutan += 1
     return urutan
-
+```
 
 Menggunakan perulangan sederhana untuk menghitung total node.
 
+---
 
-
-#  Eksekusi Program
+# 🧪 Eksekusi Program
 
 ```python
 LL = LinkedList()
@@ -234,9 +250,9 @@ LL.print()
 print(LL.length())
 ```
 
+---
 
-
-#  Proses Eksekusi (Ringkas)
+# 🔍 Proses Eksekusi (Ringkas)
 
 1. Membuat list kosong (`head = None`)
 2. Menambahkan jeruk → menjadi elemen pertama
@@ -263,6 +279,7 @@ List hanya menyisakan satu elemen, yaitu **mangga**.
 ---
 
 Kalau mau dibuatkan **versi yang tampilannya seperti dokumentasi profesional**, atau ingin **ditambah diagram alur / flowchart**, tinggal bilang!
+
 
 
 
